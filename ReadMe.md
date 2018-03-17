@@ -151,7 +151,7 @@ module.exports = {
 
 <head>
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="/css/site.css" />
+  <link rel="stylesheet" href="./css/site.css" />
   <title>Vue.js 単一ファイルコンポーネント サンプル</title>
 </head>
 
@@ -164,7 +164,7 @@ module.exports = {
 	</div>
 	<footer id="footer">&copy; 2018 hoge</footer>
   </div>
-  <script src="/js/index.bundle.js"></script>
+  <script src="./js/index.bundle.js"></script>
 </body>
 
 </html>
