@@ -185,7 +185,6 @@ bodyはvueの要素にできないので注意。
   color: $W
 #main
   margin: 0 auto
-  width: 1024px
   padding: 1em
   color: $Gy40
 #footer
