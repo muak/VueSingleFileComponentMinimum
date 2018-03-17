@@ -110,9 +110,6 @@ module.exports = {
 }
 
 ```
-
-
-
 ## package.json スクリプト
 
 ```js
@@ -133,13 +130,15 @@ module.exports = {
 * build:css
 	* dev:cssに加えてcssを圧縮(-c)するようにする。監視はしない。
 * dev:js
-	* webpack-dev-serverを変更即反映(--hot)するようにしてinlineで開発モード(-mode development)で起動する
+	* webpack-dev-serverを変更即反映(--hot)するようにしてinlineで開発モード(--mode development)で起動する
 * build:js
-	* production環境変数を渡しつつwebpackを本番モード(-mode production)で実行する
+	* production環境変数を渡しつつwebpackを本番モード(--mode production)で実行する
 * devAll
 	* dev:で始まるスクリプトを並列実行する
 * buildAll
 	* build:で始まるスクリプトを順番に実行する
+
+--modeで本番・開発用のビルドを切り替えられるが、configの中でprocess.env.NODE_ENVがセットされないので、configで使う場合はscriptで明示的に指定する必要がある。
 
 ## いくつかの適当なソースを用意する
 
