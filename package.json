@@ -1,0 +1,32 @@
+{
+  "name": "vuesample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:css": "stylus -w --include-css src/stylus/site.styl -o dist/css -u autoprefixer-stylus",
+    "dev:js": "webpack-dev-server --hot --inline --mode development",
+    "devAll": "run-p dev:*",
+    "build:css": "stylus -c --include-css src/stylus/site.styl -o dist/css -u autoprefixer-stylus",
+    "build:js": "NODE_ENV=production webpack --mode production",
+    "buildAll": "run-s build:*"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.14.0",
+    "css-loader": "^0.28.11",
+    "npm-run-all": "^4.1.2",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "vue-loader": "^14.2.1",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "ress": "^1.2.2",
+    "vue": "^2.5.16"
+  }
+}
