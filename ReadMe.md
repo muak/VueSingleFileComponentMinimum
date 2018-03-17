@@ -117,8 +117,8 @@ module.exports = {
 
 ```js
 "scripts": {
-    "dev:css": "stylus -w --include-css src/stylus/site.styl -o dist/css -u autoprefixer-stylus",
-    "dev:js": "webpack-dev-server --hot --inline --mode development",
+	"dev:css": "stylus -w --include-css src/stylus/site.styl -o dist/css -u autoprefixer-stylus",
+	"dev:js": "webpack-dev-server --hot --inline --mode development",
 	"devAll": "run-p dev:*",
 	"build:css": "stylus -c --include-css src/stylus/site.styl -o dist/css -u autoprefixer-stylus",
 	"build:js": "NODE_ENV=production webpack --mode production",
